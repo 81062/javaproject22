@@ -1,8 +1,15 @@
 pipeline {
     agent any 
-    tools {
-         maven 'MAVEN'
-            jdk 'JAVA'
+    stages{
+        stage('git checkout'){
+            steps{
+              git branch: 'main', url: 'https://github.com/81062/javaproject22.git'  
+            }
+
+        }
+    }
+
+         '
     }
     stages {
 
