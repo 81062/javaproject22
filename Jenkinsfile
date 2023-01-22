@@ -7,10 +7,7 @@ pipeline {
             }
 
         }
-    }
-
-        
-    }
+    }   
     stages {
 
          stage('Stage-0 : Static Code Analysis Using SonarQube') { 
