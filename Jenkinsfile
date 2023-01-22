@@ -6,17 +6,7 @@ pipeline {
               git branch: 'main', url: 'https://github.com/81062/javaproject22.git'  
             }
 
-        }
-    }   
-    stages {
-
-         stage('Stage-0 : Static Code Analysis Using SonarQube') { 
-             steps {
-                 sh 'mvn clean verify sonar:sonar -DskipTests'
-             }
-         }
-
-        stage('Stage-1 : Clean') { 
+        }  stage('Stage-1 : Clean') { 
             steps {
                 sh 'mvn clean'
             }
